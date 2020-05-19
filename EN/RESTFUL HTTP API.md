@@ -125,7 +125,7 @@ None
  ** Return value description **
 
 | Parameter name | Type | Description |
-| :----- | :-------------------------- | -------------- -|
+| :----- | :-------------------------- | ---------------|
 | data | Map <SymbolName, SymbolInfo> | Details of trading pairs |
 
 SymbolName: string, for example `BTC/USDT`
@@ -235,7 +235,7 @@ ba | floating point number | bidAmount buy a pending order amount |
 ** Parameter: **
 
 | Parameter name | Type | Required | Description |
-|: ----- |: ------ |: --------- | ----------------------- --------------- |
+| :----- | :------ | :--------- | -------------------------------------- |
 | s | string | yes | trading pair name, / replaced with-|
 | depth | integer | No, default 20 | The number of depths returned, optional values: 5,10,20,50,100 |
 
@@ -261,7 +261,7 @@ GET /v1/public/spot/depth?S=BTC-USDT&depth=5
  ** Return value description **
 
 | Field name | Type | Description |
-|: ----- |: ---------------- | ------------------------ ------------------------------------ |
+| :----- | :---------------- | ------------------------------------------------------------ |
 | symbol | String | Trade Pair Name |
 asks | Array Array <Array> | Sell depth array, each element of the array is an array, consisting of price and quantity, arranged from low to high price |
 | bids | Array Array <Array> | Buy depth array, each element of the array is an array, consisting of price and quantity, arranged from highest to lowest price |
@@ -338,7 +338,7 @@ GET /v1/public/spot/trades?s=BTC-ETH
 ** Parameter: **
 
 | Parameter name | Type | Required | Description |
-| :----- | :----- | :------- | -------------------------- ---------------------------------- |
+| :----- | :----- | :------- | ------------------------------------------------------------ |
 | s | string | yes | trading pair name, / replaced with-|
 | p | string | Yes | Time interval (minute system: 1m, 5m, 10m, 15m, 30m. hour system: 1H, 4H, 12H, day system: 1D, week: 1W, month system: 1Month) |
 | l | int | No | Return the number of data, the default is 500, the maximum is 1000 |
@@ -492,7 +492,7 @@ accessKey = ce2a18e0-dshs-4c44-4515-9aca67dd706e & amount = 0.01 & price = 10000
 ** Parameter: **
 
 | Parameter name | Required | Type | Description |
-| :-------- | :--- | :----- | --------------------------- ------------- |
+| :-------- | :--- | :----- | ---------------------------------------- |
 | accessKey | yes | string | accessKey |
 | price | yes | string | price |
 | amount | yes | string | commission amount |
@@ -539,7 +539,7 @@ direction | yes | string | buying and selling direction Buy: BUY; Sell: SELL |
 **parameter:**
 
 | Parameter name | Required | Type | Description |
-| :-------- | :--- | :----- | --------------------------- ------------- |
+| :-------- | :--- | :----- | ---------------------------------------- |
 | accessKey | yes | string | accessKey |
 | orderId | yes | string | price |
 | no | yes | string | request no, if it does, the server returns the same parameters |
@@ -561,7 +561,7 @@ direction | yes | string | buying and selling direction Buy: BUY; Sell: SELL |
  ** Return parameter description **
 
 | Parameter name | Type | Description |
-|: ------ |: ----- | ---------- |
+| :------ | :----- | ---------- |
 | orderId | string | order number |
 | no | string | request no |
 
@@ -629,7 +629,7 @@ direction | yes | string | buying and selling direction Buy: BUY; Sell: SELL |
  ** Return parameter description **
 
 | Field name | Type | Description |
-| :------------- | :------ | -------------------------- --------------- |
+| :------------- | :------ | ----------------------------------------- |
 | amount | string | commission amount |
 | baseSymbol | string | target currency, the name after the trading pair "/" |
 | coinSymbol | string | trading currency, name before trading pair "/" |
@@ -677,7 +677,7 @@ details is the transaction that the order has been completed, and the fields in 
 **parameter:**
 
 | Parameter name | Required | Type | Description |
-| :-------- | :--- | :----- | --------------------------- ------------------- |
+| :-------- | :--- | :----- | ---------------------------------------------- |
 | accessKey | yes | string | accessKey |
 | status | yes | string | see description below |
 | symbol | no | string | trading pairs, if this parameter is absent, all trading pairs are returned |
@@ -747,7 +747,7 @@ The status parameter values ​​are as follows:
  ** Return result list array description **
 
 | Field name | Type | Description |
-| :------------- | :------ | -------------------------- --------------- |
+| :------------- | :------ | ----------------------------------------- |
 | amount | string | order number |
 | baseSymbol | string | target currency, the name after the trading pair "/" |
 | coinSymbol | string | trading currency, name before trading pair "/" |
@@ -779,7 +779,7 @@ The status parameter values ​​are as follows:
 **parameter:**
 
 | Parameter name | Required | Type | Description |
-| :-------- | :--- | :----- | --------------------------- ------------- |
+| :-------- | :--- | :----- | ---------------------------------------- |
 | accessKey | yes | string | accessKey |
 | no | yes | string | request no, if it does, the server returns the same parameters |
 | sign | yes | string | signature |
