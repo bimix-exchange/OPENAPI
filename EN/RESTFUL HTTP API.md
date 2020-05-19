@@ -582,7 +582,7 @@ direction | yes | string | buying and selling direction Buy: BUY; Sell: SELL |
 **parameter:**
 
 | Parameter name | Required | Type | Description |
-| :-------- | :--- | :----- | --------------------------- ------------- |
+| :-------- | :--- | :----- | ---------------------------------------- |
 | accessKey | yes | string | accessKey |
 | orderId | yes | string | price |
 | no | yes | string | request no, if it does, the server returns the same parameters |
